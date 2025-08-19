@@ -96,3 +96,12 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+.env
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres  # or mobile_attribution_user
+DB_PASSWORD=Ra@1234 # or secure_password_2025
+DB_DATABASE=mobile_attribution_db
+DATABASE_URL=postgresql://postgres.kjzdzremhfdocertsivp:HS*4zALxSzga7uq8@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
