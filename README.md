@@ -105,3 +105,19 @@ DB_USERNAME=postgres  # or mobile_attribution_user
 DB_PASSWORD=Ra@1234 # or secure_password_2025
 DB_DATABASE=mobile_attribution_db
 DATABASE_URL=postgresql://postgres.kjzdzremhfdocertsivp:HS*4zALxSzga7uq8@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
+
+
+
+
+$ curl -X POST http://localhost:3000/track/install \
+  -H "Content-Type: application/json" \
+  -d '{
+    "install_id": "9a1b2c3d-4567-89ab-cdef-012345678901",        
+    "device_id": "device123",
+    "click_id": "123e4567-e89b-12d3-a456-426614174000",
+    "campaign_id": "camp001",
+    "ad_network": "adnet_alpha",
+    "attribution_type": "click",
+    "timestamp": "2025-07-11T10:15:23Z"
+  }'
+{"status":"success","data":{"install_id":"9a1b2c3d-4567-89ab-cdef-012345678901","device_id":"device123","click_id":"123e4567-e89b-12d3-a456-426614174000","timestamp":"2025-07-11T10:15:23.000Z","campaign_id":"camp001","ad_network":"adnet_alpha","attribution_type":"click"}}
